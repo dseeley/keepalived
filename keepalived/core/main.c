@@ -307,7 +307,6 @@ make_pidfile_name(const char* start, const char* instance, const char* extn)
 	return name;
 }
 
-#ifndef _DEBUG_
 static void
 parent_child_remover(thread_t *thread)
 {
@@ -348,7 +347,6 @@ parent_child_remover(thread_t *thread)
 		}
 	}
 }
-#endif
 
 #ifdef _WITH_VRRP_
 bool
